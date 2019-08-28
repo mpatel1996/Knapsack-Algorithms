@@ -1,3 +1,9 @@
+//Author: Mihir Patel
+//NOTE: Current Program Version does not take more than 50 items. Programmer must change value in code for future use. 
+//      The default memory allocation can be turned into Dynamic array OR use vectors for better functionality of the program. 
+//      This version just gives you the Max profit of the stored items.
+
+
 #include <iostream>
 #include <algorithm>
 #include <queue>
@@ -10,7 +16,7 @@ struct Item
 {
     int weight;
     int value;
-};
+}arr[50];
 
 struct Node
 {
@@ -134,7 +140,6 @@ int main()
     cout << "How many number of items do you want to store: ";
     cin >> numOfItem;
 
-    Item arr[50];
     for(int j =0; j < numOfItem; j++)
     {
             cout << "Enter the Weight of the item: ";
